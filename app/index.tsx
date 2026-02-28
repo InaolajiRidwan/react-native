@@ -1,4 +1,5 @@
 import Button from "../components/Button";
+import CustomButton from "../DYNAMIC UI/customeButton/customButton"
 import React from "react";
 import { Platform, SafeAreaView, StyleSheet, Text, View } from "react-native";
 
@@ -8,7 +9,7 @@ export default function index() {
     <SafeAreaView style={styles.safeContainer}>
       <View style={styles.container}>
         <Text style={styles.text}>Welcome!</Text>
-        <Button />
+        <CustomButton title="Press Me" onPress={()=>alert("pressed")} />
       </View>
     </SafeAreaView>
   );
